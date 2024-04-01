@@ -13,6 +13,7 @@ Each `BST` node has an integer `value`, a `left` child node, and a `right` child
 > 3) and its children nodes are either valid BST nodes themselves or `None` / `null`.
 
 Sample Input:
+```
 `tree` =    10
           /    \
          5      15
@@ -20,7 +21,8 @@ Sample Input:
       2     5 13   22
     /           \
    1             14
-  
+```
+
 `target` = 12
 
 Sample Output

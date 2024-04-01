@@ -1,3 +1,5 @@
+import { expect } from '@jest/globals';
+
 class BST {
   constructor(value) {
     this.value = value;
@@ -18,4 +20,4 @@ const root = new BST(10);
 
 const expected = 13;
 const actual = program.findClosestValueInBst(root, 12);
-chai.expect(actual).to.deep.equal(expected);
+expect(actual).toEqual(expected);
