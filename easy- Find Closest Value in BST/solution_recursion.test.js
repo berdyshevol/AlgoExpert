@@ -1,4 +1,5 @@
 import { expect } from '@jest/globals';
+import { findClosestValueInBst } from './solution_recursion';
 
 class BST {
   constructor(value) {
@@ -19,5 +20,5 @@ const root = new BST(10);
     root.right.right = new BST(22);
 
 const expected = 13;
-const actual = program.findClosestValueInBst(root, 12);
+const actual = findClosestValueInBst(root, 12);
 expect(actual).toEqual(expected);
