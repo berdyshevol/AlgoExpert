@@ -10,6 +10,8 @@ function findClosestValueInBstHelper(tree, target, currentClosest) {
   else return target;
 }
 
-export function findClosestValueInBst(tree, target) {
+function findClosestValueInBst(tree, target) {
   return findClosestValueInBstHelper(tree, target, tree.value);
 }
+
+module.exports = { findClosestValueInBst }; 
