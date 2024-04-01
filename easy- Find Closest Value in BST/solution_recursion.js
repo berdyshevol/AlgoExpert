@@ -1,5 +1,9 @@
 const distance = (v1, v2) => Math.abs(v1 - v2);
-
+/**
+ * 
+ * O(log(n)) time
+ * O(n) space
+ */
 function findClosestValueInBstHelper(tree, target, currentClosest) {
   if (tree === null) return currentClosest;
   let closest = currentClosest;
